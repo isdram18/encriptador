@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+
+    <header>
+       <div>
+        <img class="logo" src="/assets/alura-logo.png" alt="logo Alura">
+       </div> 
+    </header>
+    <main>
+
+        
+        <section class="cuadro_de_texto">
+            
+            <textarea class="texto_a_transformar" id ="miTextarea" cols='40' rows="15" placeholder="Ingrese texto aqui"></textarea>
+        
+            <div>
+                <h6 class="info">
+                <img src="/assets/exclamation-circle.png">
+                Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btne" onclick="encriptaElTexto()">Encriptar</button>
+                <button class="btnd" onclick="desencriptarElTexto()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="texto_transformado" id="mensaje" cols='40' rows="30">
+                
+            </textarea>
+            <div class="botones">
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="btnc" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
     
+    <script src="encripta.js"></script>
+    <footer class="footer">
+        <p>© 2024 | Developer Isdram</p>
+    </footer>
 </body>
 </html>
